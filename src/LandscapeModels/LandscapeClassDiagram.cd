@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LandscapeModels.Agent">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCEAAACQAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQg=</HashCode>
+      <FileName>Agent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Offices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.AgentOffice">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACDAAAAEAAAAAIAAAIAAAgAAAAABAAAgAIAAAAAAg=</HashCode>
+      <FileName>AgentOffice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="City" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LandscapeModels.Building">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAEAAAAAIAAAIKAAAEAAAAAACAAIAAAAAAAA=</HashCode>
+      <FileName>Building.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="City" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="BuildingDetails" />
+      <Property Name="Houses" />
+      <Property Name="Landlords" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.BuildingDetails">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICABIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuildingDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.BuildingAttributesMaster">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuildingAttributesMaster.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="BuildingDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.City">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAQAAAAIAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.Country">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Country.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.House">
+    <Position X="0.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAEAAgAQAAAAAAAACCABAABAEAAAAIAAAAAAEgAA=</HashCode>
+      <FileName>House.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="HouseType" />
+      <Property Name="Landlord" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="HouseAgreements" />
+      <Property Name="HouseDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.HouseAgreement">
+    <Position X="3.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAACgEAAEACAAAAAAAAAAAMAAAAAQEAAI=</HashCode>
+      <FileName>HouseAgreement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tenant" />
+      <Property Name="Landlord" />
+      <Property Name="Agent" />
+      <Property Name="PaymentSchedule" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LandscapeModels.HouseDetails">
+    <Position X="0.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAgAAAAAAAAAAAAAAAAAAAAAAIABAAAAAA=</HashCode>
+      <FileName>HouseDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.HouseAttributesMaster">
+    <Position X="3" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>HouseAttributesMaster.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="HouseDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LandscapeModels.HouseType">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HouseType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.Landlord">
+    <Position X="6.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAQAAAAAAAAAQAQAAAAAAAAAABIAAAAAAAA=</HashCode>
+      <FileName>Landlord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.Tenant">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCCEAAAAQAAIAAAAAAAAAAAAAAIAAAAAAAAAAACAg=</HashCode>
+      <FileName>Tenant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Nationality" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LandscapeModels.PaymentSchedule">
+    <Position X="6" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LandscapeModels.Nationality">
+    <Position X="9.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Nationality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
