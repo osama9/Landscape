@@ -1,0 +1,19 @@
+{
+  "name": "Landscape",
+  "version": "0.0.0",
+  "homepage": "https://github.com/osama9/Landscape",
+  "authors": [
+    "Osama <osama.747@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
